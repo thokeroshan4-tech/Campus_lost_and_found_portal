@@ -7,7 +7,7 @@ proof-of-ownership claim workflow.
 ## Status
 
 🚧 Backend auth system is built and tested. Items, claims, and admin routes
-are next. Frontend has not been started yet.
+are next. 
 
 ## Tech stack
 
