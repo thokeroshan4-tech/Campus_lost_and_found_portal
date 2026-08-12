@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-display: 'Fraunces', serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+
+  /* Brand */
+  --color-ink: #1B2430;
+  --color-paper: #F3F4F1;
+  --color-teal: #1F6F6B;
+  --color-teal-deep: #164F4C;
+  --color-teal-tint: #EEF5F4;
+  --color-line: #DEDFDA;
+  --color-muted: #767B7A;
+  --color-faint: #8A8F8E;
+  --color-rust: #B5553B;
+
+  /* Status — meaning stays fixed everywhere in the app */
+  --color-status-open: #8B8D94;
+  --color-status-open-bg: #F1F1F0;
+  --color-status-pending: #B5842A;
+  --color-status-pending-bg: #FBF1DE;
+  --color-status-approved: #2B6CB0;
+  --color-status-approved-bg: #E9F1FB;
+  --color-status-resolved: #3F8F5F;
+  --color-status-resolved-bg: #E9F5EC;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background: var(--color-paper);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-display { font-family: var(--font-display); }
+.font-mono { font-family: var(--font-mono); }
+
+:focus-visible {
+  outline: 2px solid var(--color-teal);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
